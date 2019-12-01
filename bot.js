@@ -1,13 +1,15 @@
 const Discord = require("discord.js");
   const kboosh = new Discord.Client();
-    const kbooshtoken = "MzI3NzM2NTMyOTMwOTIwNDUw.DGmnLA.QFbtYXPzTAvZsoFW70wNLyVm3lE"
+    const kbooshtoken = "NjUwNTI0MzMyOTIxMDYxNDAz.XeMo8A.jnn3NfYjo9xFS-hd2rei_EHpj7A"
       kboosh.on('ready', () => {
-        kboosh.user.setGame(`KBOOSH TEST Broadcast`,'https://www.twitch.tv/TEST-Broadcast');
+        kboosh.user.setGame(`ڕٰا̍ڪٰا̍نۨ ڣــۄڦ ا̍ڷــڦــمۘــہ`,'https://www.twitch.tv/TEST-Broadcast');
           console.log('Im Ready!');
   
         });
 
-  kboosh.on('message', message => {
+kboosh.login(kbooshtoken);
+
+ kboosh.on('message', message => {
     if (message.content.split(' ')[0] == '%k')
        message.guild.members.forEach( member => {
          if (!message.member.hasPermission("ADMINISTRATOR"))  return;
@@ -20,7 +22,7 @@ const Discord = require("discord.js");
             
                                                   });
    kboosh.on("message", message => {
-       var prefix = "%";
+       var prefix = "^";
  
              var args = message.content.substring(prefix.length).split(" ");
                 if (message.content.startsWith(prefix + "b")) {
@@ -45,5 +47,3 @@ const Discord = require("discord.js");
                             }
                           }
 });
-
-client.login(process.env.BOT_TOKEN);
