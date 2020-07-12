@@ -1,8 +1,8 @@
 const Discord = require("discord.js");
   const kboosh = new Discord.Client();
-    const kbooshtoken = "NjUwNTI0MzMyOTIxMDYxNDAz.XeMo8A.jnn3NfYjo9xFS-hd2rei_EHpj7A"
+    const kbooshtoken = "NzMxOTM3NjIxNTYyODg0MjEx.XwtUIQ.NQDjq1ABdEANko3NJF_rhb94xdU"
       kboosh.on('ready', () => {
-        kboosh.user.setGame(`ڕٰا̍ڪٰا̍نۨ ڣــۄڦ ا̍ڷــڦــمۘــہ`,'https://www.twitch.tv/TEST-Broadcast');
+        kboosh.user.setGame(`E ✗ O D I A Offical`,'https://www.twitch.tv/TEST-Broadcast');
           console.log('Im Ready!');
   
         });
@@ -22,7 +22,7 @@ kboosh.login(kbooshtoken);
             
                                                   });
    kboosh.on("message", message => {
-       var prefix = "^";
+       var prefix = "$";
  
              var args = message.content.substring(prefix.length).split(" ");
                 if (message.content.startsWith(prefix + "b")) {
